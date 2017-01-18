@@ -23,14 +23,6 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id":   "group",
-                            "type": "autocomplete",
-                            "name": "Group",
-                            "data": [ "Family", "University" ],
-                            "form": "GroupForm",
-                            "width": 2
-                        },
-                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -65,6 +57,31 @@ export class GuiModel {
                             "name": "Ok"
                         }
                     ]
+                },
+                {
+                    "id": "LocationForm",
+                    "title": "Location",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "LocationName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
                 }
             ],
             "pageList": [
@@ -78,20 +95,6 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "blue",
                             "page": "friendspage",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Groups",
-                            "icon": "fa-tasks",
-                            "color": "wisteria",
-                            "page": "groupspage",
-                        },
-                        {
-                            "type": "button",
-                            "name": "Activities",
-                            "icon": "fa-industry",
-                            "color": "lime",
-                            "page": "activitiespage",
                         },
                         {
                             "type": "button",
@@ -110,7 +113,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "New Friend",
+                            "name": "NewFriend",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
@@ -130,28 +133,28 @@ export class GuiModel {
                     ]
                 },
                 {
-                    "id": "groupspage",
+                    "id": "locationspage",
                     "elementList": [
                         {
                             "type": "backbutton",
                         },
                         {
                             "type": "newButton",
-                            "name": "New Group",
-                            "icon": "fa-user",
+                            "name": "NewLocation",
+                            "icon": "fa-home",
                             "color": "green",
                             "form": {
-                                "form": "GroupForm"
+                                "form": "LocationForm"
                             }
                         },
                         {
                             "type": "list",
-                            "icon": "fa-user",
+                            "icon": "fa-home",
                             "color": "blue",
                             "search": true,
-                            "data": [ { name: "Family" }, { name: "University"} ],
+                            "data": [ { name: "Adelboden" }, { name: "Winterthur" }, { name: "Zinal"}, { name: "Zürich"} ],
                             "form": {
-                                "form": "GroupForm"
+                                "form": "LocationForm"
                             }
                         },
                     ]
