@@ -26,9 +26,11 @@ export class ExampleTranslationService extends TranslationService {
             "FamilyName" : "Family Name",
             "FirstName" : "First Name",
             "Groups" : "Groups",
+            "GroupName" : "Group Name",
             "Location" : "Location",
             "LocationName" : "Location Name",
             "NewFriend" : "New Friend",
+            "NewGroup" : "New Group",
             "NewLocation" : "New Location",
             "Nickname" : "Nickname"
         }
