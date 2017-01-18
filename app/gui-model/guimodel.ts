@@ -30,6 +30,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id":   "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "data": [ "Study", "Family", "School" ],
+                            "form": "GroupForm",
+                            "width": 2
+                        },
+                        {
                             "id":   "location",
                             "type": "autocomplete",
                             "name": "Location",
@@ -73,6 +81,31 @@ export class GuiModel {
                             "id": "name",
                             "type": "text",
                             "name": "LocationName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
+                    "id": "GroupForm",
+                    "title": "Group",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "GroupName",
                             "width": 2,
                             "required": true
                         },
@@ -187,7 +220,17 @@ export class GuiModel {
                             "form": {
                                 "form": "GroupForm"
                             }
-                        }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "data": [ { name: "Study" }, { name: "Family" }, { name: "School"} ],
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        },
                     ]
                 }
             ]
