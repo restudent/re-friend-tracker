@@ -6,7 +6,7 @@ export class GuiModel {
             "formList": [
                 {
                     "id": "FriendForm",
-                    "title": "Person",
+                    "title": "Friend",
                     "formFieldList": [
                         {
                             "id": "familyName",

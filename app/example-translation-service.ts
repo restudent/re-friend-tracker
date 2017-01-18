@@ -22,6 +22,7 @@ export class ExampleTranslationService extends TranslationService {
             "Birthday" : "Birthday",
             "Comments" : "Comments",
             "Friends" : "Friends",
+            "Friend" : "Friend",
             "FamilyName" : "Family Name",
             "FirstName" : "First Name",
             "Groups" : "Groups",
@@ -29,6 +30,7 @@ export class ExampleTranslationService extends TranslationService {
             "LocationName" : "Location Name",
             "NewFriend" : "New Friend",
             "NewLocation" : "New Location",
+            "Nickname" : "Nickname"
         }
     }
 
